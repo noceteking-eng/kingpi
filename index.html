@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="KingPi — a community-focused directory for ideas and projects in the Pi ecosystem.">
+  <title>KingPi — Pi Community Projects</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="/" aria-label="KingPi home"><span class="crown">♛</span> King<span class="gold">Pi</span></a>
+    <nav aria-label="Main navigation">
+      <a href="#projects">Projects</a>
+      <a href="#about">About</a>
+      <button class="small-btn" id="loginBtn" type="button">Pi sign in</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div>
+        <div class="eyebrow">COMMUNITY • IDEAS • INNOVATION</div>
+        <h1>Build the future of the <span class="gold">Pi</span> community.</h1>
+        <p class="lead">Discover community ideas, explore projects, and connect with people building in the Pi ecosystem. KingPi is a community project directory prototype.</p>
+        <a class="primary-btn" href="#projects">Explore projects</a>
+        <p class="notice">Prototype preview — Pi authentication and payments are not enabled.</p>
+      </div>
+      <div class="hero-mark" aria-label="KingPi emblem">
+        <div class="ring">♛</div>
+        <span>KINGPI</span>
+        <small>COMMUNITY HUB</small>
+      </div>
+    </section>
+
+    <section class="stats" aria-label="KingPi values">
+      <div><strong>Community</strong><span>People-powered ideas</span></div>
+      <div><strong>Discovery</strong><span>Explore project concepts</span></div>
+      <div><strong>Innovation</strong><span>Build together</span></div>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="section-head">
+        <div><div class="eyebrow">DISCOVER</div><h2>Community projects</h2></div>
+        <span class="tag">Prototype listings</span>
+      </div>
+      <div class="cards">
+        <article class="project-card">
+          <div class="project-icon">🌱</div>
+          <h3>Community Garden</h3>
+          <p>A concept for connecting local growers and people interested in sustainable community projects.</p>
+          <span class="status">Concept</span>
+        </article>
+        <article class="project-card">
+          <div class="project-icon">🛠️</div>
+          <h3>Builder Network</h3>
+          <p>A proposed space for makers to share ideas, skills, and progress across the ecosystem.</p>
+          <span class="status">Concept</span>
+        </article>
+        <article class="project-card">
+          <div class="project-icon">📚</div>
+          <h3>Learning Hub</h3>
+          <p>A community learning concept for sharing guides and helping newcomers get started.</p>
+          <span class="status">Concept</span>
+        </article>
+      </div>
+      <p class="notice">These are sample concepts only, not verified projects, fundraisers, or investment opportunities.</p>
+    </section>
+
+    <section class="about" id="about">
+      <div class="eyebrow">ABOUT KINGPI</div>
+      <h2>A place for community ideas.</h2>
+      <p>KingPi is an independent community-focused project directory concept. It is not an official Pi Network product and does not represent the Pi Core Team. This preview does not collect donations, process payments, or authenticate Pi users.</p>
+      <p>Never share your wallet passphrase or private keys with anyone.</p>
+    </section>
+  </main>
+
+  <footer><span>© <span id="year"></span> KingPi</span><span>Independent community prototype · Not affiliated with Pi Network</span></footer>
+  <div class="toast" id="message" role="status" aria-live="polite"></div>
+  <script src="/app.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
