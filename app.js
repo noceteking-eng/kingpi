@@ -1,4 +1,4 @@
-Prototype only: Pi authentication and payments are not connected yet.
+// Prototype only: Pi authentication and payments are not connected yet.
 const loginBtn = document.getElementById('loginBtn');
 const message = document.getElementById('message');
 loginBtn.addEventListener('click', () => {
